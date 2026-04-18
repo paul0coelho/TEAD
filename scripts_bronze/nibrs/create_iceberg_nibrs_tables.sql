@@ -150,7 +150,7 @@ CREATE TABLE bronze_nibrs_assignment_type (
  ingest_time TIMESTAMP
 )
 WITH (
- format = 'PARQUET',
+ format = 'PARQUET'
 );
 
 DROP TABLE IF EXISTS bronze_nibrs_bias_list;
@@ -162,14 +162,15 @@ CREATE TABLE bronze_nibrs_bias_list (
  ingest_time TIMESTAMP
 )
 WITH (
- format = 'PARQUET',
+ format = 'PARQUET'
 );
 
 DROP TABLE IF EXISTS bronze_nibrs_bias_motivation;
 CREATE TABLE bronze_nibrs_bias_motivation (
  data_year INTEGER,
  bias_id BIGINT,
- offense_id BIGINT
+ offense_id BIGINT,
+ ingest_time TIMESTAMP
 )
 WITH (
  format = 'PARQUET',
@@ -185,7 +186,7 @@ CREATE TABLE bronze_nibrs_circumstances (
  ingest_time TIMESTAMP
 )
 WITH (
- format = 'PARQUET',
+ format = 'PARQUET'
 );
 
 DROP TABLE IF EXISTS bronze_nibrs_cleared_except;
@@ -197,7 +198,7 @@ CREATE TABLE bronze_nibrs_cleared_except (
  ingest_time TIMESTAMP
 )
 WITH (
- format = 'PARQUET',
+ format = 'PARQUET'
 );
 
 DROP TABLE IF EXISTS bronze_nibrs_criminal_act;
@@ -476,7 +477,7 @@ CREATE TABLE bronze_nibrs_suspected_drug_type (
  ingest_time TIMESTAMP
 )
 WITH (
- format = 'PARQUET',
+ format = 'PARQUET'
 );
 
 DROP TABLE IF EXISTS bronze_nibrs_using_list;
@@ -487,7 +488,7 @@ CREATE TABLE bronze_nibrs_using_list (
  ingest_time TIMESTAMP
 )
 WITH (
- format = 'PARQUET',
+ format = 'PARQUET'
 );
 
 DROP TABLE IF EXISTS bronze_nibrs_victim;
@@ -574,7 +575,7 @@ CREATE TABLE bronze_nibrs_victim_type (
  ingest_time TIMESTAMP
 )
 WITH (
- format = 'PARQUET',
+ format = 'PARQUET'
 );
 
 DROP TABLE IF EXISTS bronze_nibrs_weapon;
@@ -617,8 +618,8 @@ WITH (
  format = 'PARQUET'
 );
 
-DROP TABLE IF EXISTS bronze_nibrs_ref_state_csv;
-CREATE TABLE bronze_nibrs_ref_state_csv (
+DROP TABLE IF EXISTS bronze_nibrs_ref_state;
+CREATE TABLE bronze_nibrs_ref_state (
  state_id BIGINT,
  division_id BIGINT,
  state_name VARCHAR,

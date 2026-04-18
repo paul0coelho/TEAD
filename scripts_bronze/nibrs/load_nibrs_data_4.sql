@@ -10536,7 +10536,7 @@ FROM hive.tead.wa_2024_nibrs_ref_race_csv;
 -- CARGA DA ENTIDADE: REF_STATE_CSV
 -- ############################################
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10547,9 +10547,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ar_2021_nibrs_ref_state_csv_csv;
+FROM hive.tead.ar_2021_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10560,9 +10560,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ar_2022_nibrs_ref_state_csv_csv;
+FROM hive.tead.ar_2022_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10573,9 +10573,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ar_2023_nibrs_ref_state_csv_csv;
+FROM hive.tead.ar_2023_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10586,9 +10586,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ar_2024_nibrs_ref_state_csv_csv;
+FROM hive.tead.ar_2024_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10599,9 +10599,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ct_2021_nibrs_ref_state_csv_csv;
+FROM hive.tead.ct_2021_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10612,9 +10612,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ct_2022_nibrs_ref_state_csv_csv;
+FROM hive.tead.ct_2022_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10625,9 +10625,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ct_2023_nibrs_ref_state_csv_csv;
+FROM hive.tead.ct_2023_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10638,9 +10638,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.ct_2024_nibrs_ref_state_csv_csv;
+FROM hive.tead.ct_2024_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10651,9 +10651,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.me_2021_nibrs_ref_state_csv_csv;
+FROM hive.tead.me_2021_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10664,9 +10664,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.me_2022_nibrs_ref_state_csv_csv;
+FROM hive.tead.me_2022_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10677,9 +10677,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.me_2023_nibrs_ref_state_csv_csv;
+FROM hive.tead.me_2023_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10690,9 +10690,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.me_2024_nibrs_ref_state_csv_csv;
+FROM hive.tead.me_2024_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10703,9 +10703,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tx_2021_nibrs_ref_state_csv_csv;
+FROM hive.tead.tx_2021_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10716,9 +10716,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tx_2022_nibrs_ref_state_csv_csv;
+FROM hive.tead.tx_2022_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10729,9 +10729,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tx_2023_nibrs_ref_state_csv_csv;
+FROM hive.tead.tx_2023_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10742,9 +10742,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tx_2024_nibrs_ref_state_csv_csv;
+FROM hive.tead.tx_2024_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10755,9 +10755,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tn_2021_nibrs_ref_state_csv_csv;
+FROM hive.tead.tn_2021_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10768,9 +10768,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tn_2022_nibrs_ref_state_csv_csv;
+FROM hive.tead.tn_2022_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10781,9 +10781,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tn_2023_nibrs_ref_state_csv_csv;
+FROM hive.tead.tn_2023_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10794,9 +10794,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.tn_2024_nibrs_ref_state_csv_csv;
+FROM hive.tead.tn_2024_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10807,9 +10807,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.wa_2021_nibrs_ref_state_csv_csv;
+FROM hive.tead.wa_2021_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10820,9 +10820,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.wa_2022_nibrs_ref_state_csv_csv;
+FROM hive.tead.wa_2022_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10833,9 +10833,9 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.wa_2023_nibrs_ref_state_csv_csv;
+FROM hive.tead.wa_2023_nibrs_ref_state_csv;
 
-INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state_csv
+INSERT INTO iceberg.tead_flyte.bronze_nibrs_ref_state
 SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(division_id AS BIGINT),
   TRY_CAST(state_name AS VARCHAR),
@@ -10846,4 +10846,4 @@ SELECT  TRY_CAST(state_id AS BIGINT),
   TRY_CAST(state_pub_freq_months AS VARCHAR),
   TRY_CAST(change_user AS VARCHAR),
   current_timestamp AS ingest_time
-FROM hive.tead.wa_2024_nibrs_ref_state_csv_csv;
+FROM hive.tead.wa_2024_nibrs_ref_state_csv;

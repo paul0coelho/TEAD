@@ -1,4 +1,3 @@
-delete SCHEMA hive.tead;
 CREATE SCHEMA IF NOT EXISTS hive.tead
 WITH (location = 's3a://warehouse/tead/');
 
