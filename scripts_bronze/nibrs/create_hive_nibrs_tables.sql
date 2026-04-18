@@ -1,7 +1,8 @@
+delete SCHEMA hive.tead;
 CREATE SCHEMA IF NOT EXISTS hive.tead
 WITH (location = 's3a://warehouse/tead/');
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2021_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2021_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -702,7 +703,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2021_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2021_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -720,7 +721,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2021_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2021_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -740,7 +741,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2022_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2022_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -810,7 +811,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2023_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2023_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -2228,7 +2229,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2022_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2022_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -2246,7 +2247,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2023_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2023_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -2264,7 +2265,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2022_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2022_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -2284,7 +2285,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2023_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2023_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -2304,7 +2305,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2024_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2024_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -3048,7 +3049,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2024_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2024_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -3066,7 +3067,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ar_2024_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ar_2024_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -3086,7 +3087,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2021_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2021_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -3789,7 +3790,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2021_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2021_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -3807,7 +3808,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2021_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2021_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -3827,7 +3828,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2022_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2022_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -3897,7 +3898,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2023_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2023_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -5315,7 +5316,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2022_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2022_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -5333,7 +5334,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2023_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2023_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -5351,7 +5352,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2022_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2022_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -5371,7 +5372,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2023_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2023_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -5391,7 +5392,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2024_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2024_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -6135,7 +6136,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2024_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2024_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -6153,7 +6154,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.ct_2024_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.ct_2024_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -6173,7 +6174,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2021_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2021_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -6876,7 +6877,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2021_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2021_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -6894,7 +6895,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2021_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2021_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -6914,7 +6915,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2022_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2022_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -6984,7 +6985,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2023_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2023_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -8402,7 +8403,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2022_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2022_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -8420,7 +8421,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2023_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2023_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -8438,7 +8439,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2022_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2022_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -8458,7 +8459,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2023_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2023_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -8478,7 +8479,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2024_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2024_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -9222,7 +9223,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2024_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2024_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -9240,7 +9241,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.me_2024_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.me_2024_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -9260,7 +9261,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2021_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2021_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -9963,7 +9964,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2021_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2021_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -9981,7 +9982,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2021_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2021_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -10001,7 +10002,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2022_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2022_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -10071,7 +10072,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2023_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2023_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -11489,7 +11490,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2022_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2022_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -11507,7 +11508,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2023_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2023_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -11525,7 +11526,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2022_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2022_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -11545,7 +11546,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2023_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2023_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -11565,7 +11566,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2024_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2024_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -12309,7 +12310,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2024_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2024_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -12327,7 +12328,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tn_2024_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tn_2024_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -12347,7 +12348,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2021_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2021_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -13050,7 +13051,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2021_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2021_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -13068,7 +13069,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2021_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2021_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -13088,7 +13089,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2022_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2022_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -13158,7 +13159,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2023_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2023_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -14576,7 +14577,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2022_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2022_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -14594,7 +14595,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2023_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2023_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -14612,7 +14613,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2022_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2022_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -14632,7 +14633,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2023_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2023_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -14652,7 +14653,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2024_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2024_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -15396,7 +15397,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2024_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2024_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -15414,7 +15415,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.tx_2024_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.tx_2024_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -15434,7 +15435,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2021_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2021_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -16137,7 +16138,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2021_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2021_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -16155,7 +16156,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2021_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2021_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -16175,7 +16176,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2022_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2022_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -16245,7 +16246,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2023_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2023_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -17663,7 +17664,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2022_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2022_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -17681,7 +17682,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2023_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2023_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -17699,7 +17700,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2022_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2022_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -17719,7 +17720,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2023_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2023_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,
@@ -17739,7 +17740,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2024_agencies_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2024_nibrs_agencies_csv (
  yearly_agency_id varchar,
  agency_id varchar,
  data_year varchar,
@@ -18483,7 +18484,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2024_ref_race_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2024_nibrs_ref_race_csv (
  race_id varchar,
  race_code varchar,
  race_desc varchar,
@@ -18501,7 +18502,7 @@ WITH (
  csv_escape = '"'
 );
 
-CREATE TABLE IF NOT EXISTS hive.tead.wa_2024_ref_state_csv (
+CREATE TABLE IF NOT EXISTS hive.tead.wa_2024_nibrs_ref_state_csv (
  state_id varchar,
  division_id varchar,
  state_name varchar,

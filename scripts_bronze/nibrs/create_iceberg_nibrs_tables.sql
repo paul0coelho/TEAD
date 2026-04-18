@@ -1,3 +1,6 @@
+CREATE SCHEMA IF NOT EXISTS iceberg.tead_flyte
+WITH (location = 's3a://warehouse/bronze/nibrs'); 
+
 USE iceberg.tead_flyte;
 
 DROP TABLE IF EXISTS bronze_nibrs_agencies;
@@ -58,7 +61,8 @@ CREATE TABLE bronze_nibrs_agencies (
  msa_name VARCHAR,
  publishable_flag VARCHAR,
  participated VARCHAR,
- nibrs_participated VARCHAR
+ nibrs_participated VARCHAR,
+  ingest_time TIMESTAMP
 )
 WITH (
  format = 'PARQUET',
@@ -511,8 +515,8 @@ WITH (
  partitioning = ARRAY['data_year'] 
 );
 
-DROP TABLE IF EXISTS bronze_victim_circumstances;
-CREATE TABLE bronze_victim_circumstances (
+DROP TABLE IF EXISTS bronze_nibrs_victim_circumstances;
+CREATE TABLE bronze_nibrs_victim_circumstances (
  data_year INTEGER,
  victim_id BIGINT,
  circumstances_id BIGINT,
@@ -598,8 +602,8 @@ WITH (
  format = 'PARQUET'
 );
 
-DROP TABLE IF EXISTS bronze_ref_race;
-CREATE TABLE bronze_ref_race (
+DROP TABLE IF EXISTS bronze_nibrs_ref_race;
+CREATE TABLE bronze_nibrs_ref_race (
  race_id BIGINT,
  race_code VARCHAR,
  race_desc VARCHAR,
@@ -613,8 +617,8 @@ WITH (
  format = 'PARQUET'
 );
 
-DROP TABLE IF EXISTS bronze_ref_state_csv;
-CREATE TABLE bronze_ref_state_csv (
+DROP TABLE IF EXISTS bronze_nibrs_ref_state_csv;
+CREATE TABLE bronze_nibrs_ref_state_csv (
  state_id BIGINT,
  division_id BIGINT,
  state_name VARCHAR,
