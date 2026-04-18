@@ -1,4 +1,6 @@
-CREATE TABLE hive.tead.age_sex_2024 (
+drop table if exists hive.tead.age_sex;
+CREATE TABLE hive.tead.age_sex (
+"year" varchar,
  "GEO_ID" varchar,
  "NAME" varchar,
  "S0101_C01_001E" varchar,
@@ -464,7 +466,7 @@ CREATE TABLE hive.tead.age_sex_2024 (
 )
 WITH (
  format = 'CSV',
- external_location = 's3a://warehouse/raw/age_sex/age_sex_2024',
+ external_location = 's3a://warehouse/raw/age_sex',
  skip_header_line_count = 1,
  csv_separator = ',',
  csv_quote = '"',

@@ -1,10 +1,13 @@
-CREATE TABLE iceberg.tead.income_2021_bronze
+CREATE SCHEMA IF NOT EXISTS iceberg.tead_flyte;
+drop table if exists iceberg.tead_flyte.bronze_income;
+CREATE TABLE iceberg.tead_flyte.bronze_income
 WITH (
     format = 'PARQUET',
-    location = 's3a://warehouse/bronze/income/income_2021/'
+    location = 's3a://warehouse/bronze/income/'
 )
 AS
 SELECT
+    try_cast("year" as integer) AS "year",
     "GEO_ID",
     "NAME",
     try_cast("S1901_C01_001E" as double) AS "S1901_C01_001E",
@@ -139,4 +142,4 @@ SELECT
     "pizza_rating",
     "__debug_flag__",
     "col with spaces & symbols!"
-FROM hive.tead.income_2021
+FROM hive.tead.income

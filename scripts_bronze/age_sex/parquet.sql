@@ -1,10 +1,13 @@
-CREATE TABLE iceberg.tead.age_sex_2024_bronze
+CREATE SCHEMA IF NOT EXISTS iceberg.tead_flyte;
+drop table if exists iceberg.tead_flyte.bronze_age_sex;
+CREATE TABLE iceberg.tead_flyte.bronze_age_sex
 WITH (
     format = 'PARQUET',
-    location = 's3a://warehouse/bronze/age_sex/age_sex_2024'
+    location = 's3a://warehouse/bronze/age_sex'
 )
 AS
 SELECT
+    try_cast("year" as integer) AS "year",
     "GEO_ID",
     "NAME",
     try_cast("S0101_C01_001E" as double) AS "S0101_C01_001E",
@@ -467,4 +470,4 @@ SELECT
     "pizza_rating",
     "__debug_flag__",
     "col with spaces & symbols!"
-FROM hive.tead.age_sex_2024
+FROM hive.tead.age_sex
