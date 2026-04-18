@@ -1,4 +1,6 @@
-CREATE TABLE hive.tead.race_2021 (
+drop table if exists hive.tead.race;
+CREATE TABLE hive.tead.race (
+ "year" varchar,
  "GEO_ID_v2" varchar,
  "NAME" varchar,
  "B02001_001E" varchar,
@@ -28,7 +30,7 @@ CREATE TABLE hive.tead.race_2021 (
 )
 WITH (
  format = 'CSV',
- external_location = 's3a://warehouse/raw/race/race_2021/',
+ external_location = 's3a://warehouse/raw/race/',
  skip_header_line_count = 1,
  csv_separator = ',',
  csv_quote = '"',

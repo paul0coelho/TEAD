@@ -1,4 +1,6 @@
-CREATE TABLE hive.tead.income_2021 (
+drop table if exists hive.tead.income;
+CREATE TABLE hive.tead.income (
+"year" varchar,
  "GEO_ID" varchar,
  "NAME" varchar,
  "S1901_C01_001E" varchar,
@@ -136,7 +138,7 @@ CREATE TABLE hive.tead.income_2021 (
 )
 WITH (
  format = 'CSV',
- external_location = 's3a://warehouse/raw/income/income_2021/',
+ external_location = 's3a://warehouse/raw/income/',
  skip_header_line_count = 1,
  csv_separator = ',',
  csv_quote = '"',
